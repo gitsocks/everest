@@ -98,26 +98,4 @@ describe("Qualifications Tests", () => {
         // assert
         expect(result).toBe(false);
     });
-
-    it("Expects user to be authorized with correct qualifications", () => {
-        // arrange
-        const securityContext: SecurityContext = {
-            abilities: ["read", "create"],
-            entity: "driver",
-            qualifications: [
-                { field: "location", value: "Pretoria" },
-                { field: "motorcycle", value: "Suzuki" }
-            ]
-        };
-        user.securityContexts.push(securityContext);
-
-        // act
-        const result = new Everest(user).can("read").on("driver").with([
-            { field: "location", value: "Pretoria" },
-            { field: "motorcycle", value: "Honda" }
-        ]).check();
-
-        // assert
-        expect(result).toBe(true);
-    });
 });

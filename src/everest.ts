@@ -18,7 +18,7 @@ export class Everest {
         let isValid = true;
 
         requiredQualifications.forEach(requiredQualification => {
-            isValid = userQualifications.filter(userQualification => (userQualification.field == requiredQualification.field) && (userQualification.value == requiredQualification.value)).length > 0
+            isValid = userQualifications.filter(userQualification => (userQualification.field === requiredQualification.field) && (userQualification.value === requiredQualification.value)).length > 0
         });
 
         return isValid;
@@ -30,14 +30,14 @@ export class Everest {
 
     can(ability: string) {
         this.isCan = this.user.securityContexts.filter(
-            context => context.abilities.filter(x => x == ability).length > 0
+            context => context.abilities.filter(x => x === ability).length > 0
         ).length > 0;
         return this;
     }
 
     on(entity: string) {
         this.isWith = this.user.securityContexts.filter(
-            context => context.entity == entity
+            context => context.entity === entity
         ).length > 0;
         return this;
     }
