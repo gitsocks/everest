@@ -1,6 +1,6 @@
 {
   "name": "everest",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy to implement AuthZ in a project.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
