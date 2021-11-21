@@ -1,4 +1,4 @@
 export interface Qualification {
-    field: string;
-    value: string;
+  field: string;
+  value: string;
 }

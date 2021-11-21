@@ -1,5 +1,5 @@
-import { SecurityContext } from "./security-context.model";
+import { SecurityContext } from './security-context.model';
 
 export interface EverestUser {
-    securityContexts: SecurityContext[];
+  securityContexts: SecurityContext[];
 }

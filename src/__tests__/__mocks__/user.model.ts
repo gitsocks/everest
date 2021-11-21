@@ -1,8 +1,8 @@
-import { EverestUser } from "../../models/everest-user.model";
+import { EverestUser } from '../../models/everest-user.model';
 
 export interface User extends EverestUser {
-    id: string;
-    firstName: string;
-    lastName: string;
-    email: string;
+  id: string;
+  firstName: string;
+  lastName: string;
+  email: string;
 }
