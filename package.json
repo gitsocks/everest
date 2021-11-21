@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thinwood/everest/issues"
   },
-  "homepage": "https://github.com/thinwood/everest#readme"
+  "homepage": "https://github.com/thinwood/everest#readme",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
 }
